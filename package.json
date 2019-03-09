@@ -39,8 +39,14 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --single-quote --staged"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{tsx,ts,json,css,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@types/node": "^11.10.4",

@@ -1,9 +1,9 @@
-import * as React from "react";
-import "./App.css";
-import { Router, Route, Switch } from "react-router";
-import { History } from "history";
-import HomePage from "./app/containers/HomePage";
-import BlogPostPage from "./app/containers/BlogPostPage";
+import * as React from 'react';
+import './App.css';
+import { Router, Route, Switch } from 'react-router';
+import { History } from 'history';
+import HomePage from './app/containers/HomePage';
+import BlogPostPage from './app/containers/BlogPostPage';
 
 export interface AppProps {
   history: History;
