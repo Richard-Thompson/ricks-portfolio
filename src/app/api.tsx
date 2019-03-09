@@ -1,4 +1,4 @@
-import { createClient } from "contentful";
+import { createClient } from 'contentful';
 const fetchData = (query: object): object => {
   // tslint:disable-next-line:no-any
   let client: any;

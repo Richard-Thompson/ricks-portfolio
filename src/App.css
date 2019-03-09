@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Odachi";
-  src: url("/fonts/Odachi.woff") format("woff"),
-    url("/fonts/Odachi.otf") format("opentype");
+  font-family: 'Odachi';
+  src: url('/fonts/Odachi.woff') format('woff'),
+    url('/fonts/Odachi.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "Dodge";
-  src: url("/fonts/DODGE.ttf") format("truetype");
+  font-family: 'Dodge';
+  src: url('/fonts/DODGE.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Bazaronite";
-  src: url("/fonts/Bazaronite.ttf") format("truetype");
+  font-family: 'Bazaronite';
+  src: url('/fonts/Bazaronite.ttf') format('truetype');
 }
 
 .container {

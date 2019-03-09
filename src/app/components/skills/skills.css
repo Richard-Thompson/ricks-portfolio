@@ -1,6 +1,6 @@
 .skills-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 5rem auto 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5rem auto 2rem;
 }

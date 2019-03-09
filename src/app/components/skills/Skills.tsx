@@ -1,7 +1,7 @@
-import * as React from "react";
-import SkillsCard from "./SkillsCard";
-import "./skills.css";
-import { SkillsData } from "../../containers/HomePage";
+import * as React from 'react';
+import SkillsCard from './SkillsCard';
+import './skills.css';
+import { SkillsData } from '../../containers/HomePage';
 
 export interface SkillsProps {
   skills: SkillsData;

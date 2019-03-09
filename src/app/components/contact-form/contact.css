@@ -1,76 +1,77 @@
 .contact-wrapper {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .inner-wrapper {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .contact-wrapper iframe {
-    flex: 0.5;
-    border: none;
-    align-self: center;
+  flex: 0.5;
+  border: none;
+  align-self: center;
 }
 
 .container .contact-form {
-    display: flex;
-    flex-direction: column;
-    flex: 0.5;
-    margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  margin-right: 3rem;
 }
 
 .contact-form .input-wrapper {
-    position: relative;
+  position: relative;
 }
 
-.contact-form .input-wrapper input, 
+.contact-form .input-wrapper input,
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    height: 6rem;
-    margin-top: 2rem;
-    padding:0 6rem 0 2rem;
-    border: 0.1rem solid rgb(186, 182, 182);
+  width: 100%;
+  height: 6rem;
+  margin-top: 2rem;
+  padding: 0 6rem 0 2rem;
+  border: 0.1rem solid rgb(186, 182, 182);
 }
 
 .contact-form .input-wrapper i {
-    position: absolute;
-    top: 3rem;
-    right: 1rem;
-    font-size: 4rem;
-    color: transparent;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  font-size: 4rem;
+  color: transparent;
 }
 
 .contact-form .input-wrapper:first-child i {
-    position: absolute;
-    top: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
 }
 .contact-form .input-wrapper .valid {
-    border: 5px solid green;
+  border: 5px solid green;
 }
 
 .contact-form .input-wrapper .valid + i {
-    color: green;
+  color: green;
 }
 
 .contact-form .input-wrapper:first-child input {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .contact-form .input-wrapper .message {
-    height: 21rem;
-    line-height: 6rem;
+  height: 21rem;
+  line-height: 6rem;
 }
 
 @media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
-    }
-    .contact-wrapper iframe {
-        margin-top: 3rem;
-    }
-    .contact-wrapper iframe, .contact-wrapper .contact-form {
-        flex: 1
-    }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-wrapper iframe {
+    margin-top: 3rem;
+  }
+  .contact-wrapper iframe,
+  .contact-wrapper .contact-form {
+    flex: 1;
+  }
 }

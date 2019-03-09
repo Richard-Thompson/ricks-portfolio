@@ -1,9 +1,9 @@
-import * as React from "react";
-import "./homePage.css";
-import Header from "../components/header/Header";
-import Skills from "../components/skills/Skills";
-import Contact from "../components/contact-form/Contact";
-import fetchData from "../api";
+import * as React from 'react';
+import './homePage.css';
+import Header from '../components/header/Header';
+import Skills from '../components/skills/Skills';
+import Contact from '../components/contact-form/Contact';
+import fetchData from '../api';
 
 export interface HomePageProps {
   /* Empty */
@@ -30,7 +30,7 @@ export default class HomePage extends React.Component<
     };
   }
   async componentDidMount() {
-    const skills = await fetchData({ content_type: "skills" });
+    const skills = await fetchData({ content_type: 'skills' });
 
     this.setState({
       skills: skills

@@ -1,6 +1,6 @@
-import * as React from "react";
-import "./contact.css";
-var emailjs = require("emailjs-com");
+import * as React from 'react';
+import './contact.css';
+var emailjs = require('emailjs-com');
 
 export interface ContactProps {
   /* empty */
@@ -19,9 +19,9 @@ export default class Contact extends React.Component<
   constructor(props: ContactProps) {
     super(props);
     this.state = {
-      name: "",
-      email: "",
-      message: ""
+      name: '',
+      email: '',
+      message: ''
     };
 
     this.onChange = this.onChange.bind(this);
@@ -39,7 +39,7 @@ export default class Contact extends React.Component<
               <input
                 name="name"
                 placeholder="Name.."
-                className={`name ${validNameOrMessage(name) ? "valid" : ""}`}
+                className={`name ${validNameOrMessage(name) ? 'valid' : ''}`}
                 value={name}
                 onChange={this.onChange}
               />
@@ -49,7 +49,7 @@ export default class Contact extends React.Component<
               <input
                 name="email"
                 placeholder="Email.."
-                className={`email ${validEmail(email) ? "valid" : ""}`}
+                className={`email ${validEmail(email) ? 'valid' : ''}`}
                 value={email}
                 onChange={this.onChange}
               />
@@ -60,7 +60,7 @@ export default class Contact extends React.Component<
                 name="message"
                 placeholder="Message.."
                 className={`message ${
-                  validNameOrMessage(message) ? "valid" : ""
+                  validNameOrMessage(message) ? 'valid' : ''
                 }`}
                 value={message}
                 onChange={this.onChange}
@@ -102,14 +102,14 @@ export default class Contact extends React.Component<
     event.preventDefault();
 
     var templateParams = {
-      name: "John",
-      reply_email: "john@doe.com",
-      message: "This is awesome!"
+      name: 'John',
+      reply_email: 'john@doe.com',
+      message: 'This is awesome!'
     };
 
     emailjs.send(
-      "outlook",
-      "template_VrZWSy7J",
+      'outlook',
+      'template_VrZWSy7J',
       templateParams,
       process.env.EMAILJS_USER_ID
     );
